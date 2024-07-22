@@ -1,0 +1,195 @@
+student@antix1:~
+$ history
+    1  cd Downloads/
+    2  curl LO- https://dl.k8s.io/release/v1.24.2/bin/linux/amd64/kubeclt
+    3  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
+    4  sls
+    5  ls
+    6  sudo install -o root -m 0755 kubectl /usr/local/bin/kubectl
+    7  kubectl version --client --output=yaml
+    8  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+    9  kubectl version --client --output=yaml
+   10  kubectl version --client --output=txt
+   11  kubectl version
+   12  curl -LO https://dl.k8s.io/release/v1.30.0/bin/linux/arm64/kubectl
+   13  sudo install -o root -g root -m 0775 kubectl /usr/local/bin/kubectl
+   14  kubectl version --client --output=yaml
+   15  kubectl -v
+   16  kubeclt
+   17  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl.sha256"
+   18  kubectl -v
+   19  ls /usr/local/bin/
+   20  ls
+   21  mv kubectl /usr/local/bin/
+   22  sudo mv kubectl /usr/local/bin/
+   23  ls /usr/local/bin/
+   24  kubectl version --client --output=yaml
+   25  sudo kubectl version --client --output=yaml
+   26  kubectl version --client --output=yaml
+   27  cd /usr/local/bin/
+   28  sudo install -o root -g root -m 0775 kubectl
+   29  rm -rf kubectl 
+   30  cd ..
+   31  cd .. ..
+   32  ls
+   33  cd ..
+   34  cd /
+   35  cd ~/Downloads
+   36  ls
+   37  rm =rf kubectl.sha256 
+   38  rm -rf kubectl.sha256 
+   39  curl -LO https://dl.k8s.io/release/v1.24.2/bin/linux/amd64/kubectl
+   40  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+   41  ls /usr/local/bin/
+   42  cd  Downloads/
+   43  ls
+   44  sudo usermod -aG docker $USER
+   45  sudo reboot
+   46  minikube delete
+   47  minikube start
+   48  minikube status
+   49  code .
+   50  minikube start
+   51  kubectl create -f my-replicaset.yaml 
+   52  kubectl get replicaset
+   53  kubectl get pods
+   54  kubectl delete frontend-rs
+   55  kubectl delete replicaset  frontend-rs
+   56  kubectl get pods
+   57  kubectl get replicaset
+   58  kubectl apply -f my-deployment.yaml 
+   59  kubectl get pods
+   60  kubectl get replicaset
+   61  kubectl get pods
+   62  kubectl rollout status deployment.apps/frontend-deployment
+   63  kubectl describe deployment.apps/frontend-deployment
+   64  kubectl get all
+   65  kubectl rollout history deployment.apps/frontend-deployment
+   66  kubectl apply -f my-deployment.yaml 
+   67  kubectl rollout history deployment.apps/frontend-deployment
+   68  kubectl get all
+   69  kubectl apply -f my-deployment.yaml 
+   70  kubectl get all
+   71  kubectl apply -f my-deployment.yaml 
+   72  kubectl get all
+   73  kubectl apply -f my-deployment.yaml 
+   74  kubectl get all
+   75  kubectl rollout history deployment.apps/frontend-deployment
+   76  kubectl apply -f my-deployment.yaml 
+   77  kubectl get all
+   78  kubectl rollout history deployment.apps/frontend-deployment
+   79  kubectl apply -f my-deployment.yaml 
+   80  kubectl rollout history deployment.apps/frontend-deployment
+   81  kubectl rollout history deployment.apps/frontend-deployment --revision=2
+   82  kubectl rollout history deployment.apps/frontend-deployment --revision=
+   83  kubectl rollout history deployment.apps/frontend-deployment --revision=3
+   84  kubectl apply -f my-deployment.yaml --record
+   85  kubectl rollout history deployment.apps/frontend-deployment
+   86  kubectl rollout undo deployment.apps/frontend-deployment
+   87  kubectl rollout history deployment.apps/frontend-deployment
+   88  kubectl rollout undo deployment.apps/frontend-deployment --to-revision=6
+   89  kubectl rollout history deployment.apps/frontend-deployment
+   90  minikube start
+   91  kubectl apply -f tomcat-pod.yaml 
+   92  kubectl get pods
+   93  kubectl apply -f redis-pod.yaml 
+   94  kubectl get pods
+   95  minikube restart
+   96  minikube stop
+   97  minikube status
+   98  minikube start
+   99  kubectl get pods
+  100  minikube delete
+  101  kubectl get pods
+  102  kubectl get all
+  103  kubectl delete pods pod/web-pod
+  104  kubectl delete pods -f pod/web-pod
+  105  kubectl delete pod -f pod/web-pod
+  106  kubectl run -it debian-pod --image=debian bash
+  107  minikube start
+  108  kubectl get pods
+  109  kubectl get all
+  110  kubectl get namespaces
+  111  kubectl create namespace frontend --save-config
+  112  kubectl get ns
+  113  kubectl get pods -n default
+  114  kubectl get pods -ns default
+  115  kubectl get pods -n frontend
+  116  kubectl apply -f tomcat-pod.yaml --namespace=frontend
+  117  kubectl get pods -n frontend
+  118  kubectl config set-contex --current --namespace=frontend
+  119  kubectl config set-context --current --namespace=frontend
+  120  kubectl run my-pod-apache --image httpd
+  121  kubectl get pods
+  122  kubectl get pods -n default
+  123  kubectl get pods -n frontend
+  124  kubectl delete pods my-pod-apache --namespace=frontend
+  125  kubectl delete pods tomcat-pod  --namespace=frontend
+  126  kubectl get pods -n frontend
+  127  kubectl delete namespace frontend
+  128  kubectl apply -f backend-namespace.yaml 
+  129  kubectl get ns
+  130  kubectl get pods -n backend-ns
+  131  kubectl apply -f redis-pod.yaml --namespace=backend-ns
+  132  kubectl get pods -n backend-ns
+  133  kubectl delete pods redis-ns -n namespace=brackend-ns
+  134  kubectl delete pods redis-ns -n backend-ns
+  135  kubectl delete pods redis-pod -n backend-ns
+  136  kubectl delete pods redis-ns -n backend-ns
+  137  kubectl get pods -n backend-ns
+  138  kubectl delete ns backend-ns
+  139  kubectl get ns
+  140  kubectl get services
+  141  kubectl get sv
+  142  kubectl get services
+  143  minikube delete
+  144  minikube start
+  145  kubectl get services
+  146  kubectl apply -f clusterip-service.yaml 
+  147  kubectl get services
+  148  kubectl run -it debian-pod --image=debian bash
+  149  kubectl run -it debian-pod --image=web-podn bash
+  150  kubectl run -it debian-pod --image=web-pod bash
+  151  kubectl run -it web-pod --image=web-pod bash
+  152  kubectl run -it web-pod --image=debian-pod bash
+  153  kubectl run -it web-pod --image=web-pod bash
+  154  kubectl run -it webn-pod --image=debian bash
+  155  kubectl run -it web-pod --image=debian bash
+  156  minikube delete
+  157  minikube start
+  158  kubectl apply -f clusterip-service.yaml 
+  159  kubectl get all
+  160  kubectl get pods
+  161  kubectl apply -f clusterip-service.yaml 
+  162  kubectl get all
+  163  kubectl apply -f clusterip-service.yaml 
+  164  kubectl get all
+  165  kubectl deletey -f clusterip-service.yaml 
+  166  kubectl delete -f frontend-service 
+  167  kubectl delete svn -f frontend-service 
+  168  kubectl delete -f svn frontend-service 
+  169  kubectl delete -f service-frontend-service 
+  170  kubectl delete service frontend-service
+  171  kubectl get all
+  172  minikube delete
+  173  minikube start
+  174  kubectl apply -f clusterip-service.yaml 
+  175  kubectl get all
+  176  kubectl apply -f clusterip-service.yaml 
+  177  kubectl get all
+  178  kinikube delete
+  179  minikube delete
+  180  minikube start
+  181  kubectl get all
+  182  kubectl get svn
+  183  kubectl get services
+  184  kubeclt apply -f clusterip-service.yaml 
+  185  kubeclt get pods
+  186  minikube delete
+  187  minikube start
+  188  kubeclt apply -f clusterip-service.yaml 
+  189  kubectl apply -f clusterip-service.yaml
+  190  kubectl get svc
+  191  kubectl get all
+  192  kubectl run -it debian-pod --image=debian bash
+  193  history
