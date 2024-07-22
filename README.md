@@ -7,4 +7,4 @@
 * `https://www.udemy.com/course/kubernetes-power-profissional-formacao-inicial-completa/learn/lecture/36502096#overview`
 
 # minikune-2024
-Estudo via minikune
+Estudo via minikube
